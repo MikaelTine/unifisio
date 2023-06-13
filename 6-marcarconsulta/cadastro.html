@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>CADASTRO</title>
+
     <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta nome="viewport" content="widh=device-width, initial-scal">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../style.css" >
+
+    <title>CADASTRO</title>
+
   </head>
   <body>
+    <main id="container">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>DADOS DO PACIENTE</h1>
+                <i id="mode-icon" class="fa-solid fa-moon"></i>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="nome">
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="date">
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+        </form>
+    </main>
+
+
+
     <div>
         <fieldset>
             <form>
 
-                <div>
-
-                <div>
-                    <h1>DADOS DO PACIENTE</h1>
-                </div>
 
                 <div>
                     <label>Nome</label>
