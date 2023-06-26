@@ -1,6 +1,7 @@
 <?php
 
 $cpf = $_GET['cpf'];
+$nome = $_GET['text'];
 
 $url = "http://api.medicinadireta.com.br/odata/$metadata#Paciente(nome".$nome."&cpf=".$cpf."&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJDRU5UUk8gREUgRklTSU9URVJBUElBIEUgUkVBQklMSVRBw4fDg08gQ0FWRU5BR0hJIFMvUyIsImp0aSI6ImUxY2M4OTY1LTFhOTAtNDZkYS05NTBmLTExNmVkMjI0ZDQwZiIsIk9yZ2FuaXphY2FvSWQiOiIyNjEyIiwiVXNlcklkIjoiMTkxNzUiLCJleHAiOjE2ODc4MzI4MDcsImlzcyI6Ik1lZGljaW5hRGlyZXRhLkFQSSIsImF1ZCI6Ik1lZGljaW5hRGlyZXRhLkFQSSJ9.ajkIc6wP9nyprhXDu1IQECAeSTSy-q-pRWjt8Mu1h6w";
 
@@ -13,7 +14,5 @@ curl_setopt($ch, CURLOPT_TIMEOUT,450);
 curl_setopt($ch, CURLOPT_CONNECTTIMEOUT ,10);
 $result = curl_exec($ch);
 curl_close($ch);
-
-
 
 ?>
